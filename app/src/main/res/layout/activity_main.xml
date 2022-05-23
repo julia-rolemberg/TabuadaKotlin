@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:pointerIcon="text"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -27,13 +28,13 @@
         android:textAlignment="center">
 
         <Space
-            android:layout_width="114dp"
+            android:layout_width="90dp"
             android:layout_height="match_parent"
             android:layout_weight="1" />
 
         <RatingBar
             android:id="@+id/ratingBar"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:isIndicator="true"
@@ -41,7 +42,7 @@
             tools:ignore="SpeakableTextPresentCheck" />
 
         <Space
-            android:layout_width="100dp"
+            android:layout_width="76dp"
             android:layout_height="match_parent"
             android:layout_weight="1" />
 
@@ -113,15 +114,16 @@
             android:layout_height="wrap_content"
             android:layout_weight="1" />
 
-        <TextView
+        <EditText
             android:id="@+id/txtNumInformado"
-            android:layout_width="wrap_content"
+            android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:editable="true"
             android:text="0"
             android:textAlignment="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <Space
             android:layout_width="wrap_content"
